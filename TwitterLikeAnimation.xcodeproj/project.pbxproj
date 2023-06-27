@@ -13,6 +13,14 @@
 		C0850C902A4A9E7800A82C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0850C8E2A4A9E7800A82C64 /* Main.storyboard */; };
 		C0850C922A4A9E7A00A82C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0850C912A4A9E7A00A82C64 /* Assets.xcassets */; };
 		C0850C952A4A9E7A00A82C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0850C932A4A9E7A00A82C64 /* LaunchScreen.storyboard */; };
+		C0850CA22A4AA6A000A82C64 /* FaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0850CA12A4AA6A000A82C64 /* FaveButton.swift */; };
+		C0850CA42A4AB52E00A82C64 /* FaveIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0850CA32A4AB52E00A82C64 /* FaveIcon.swift */; };
+		C0850CA62A4AB75300A82C64 /* Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0850CA52A4AB75300A82C64 /* Init.swift */; };
+		C0850CA82A4AB8DF00A82C64 /* Constraints+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0850CA72A4AB8DF00A82C64 /* Constraints+.swift */; };
+		C0850CAA2A4AB9B000A82C64 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0850CA92A4AB9B000A82C64 /* Geometry.swift */; };
+		C0850CAC2A4AC1B300A82C64 /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0850CAB2A4AC1B300A82C64 /* Easing.swift */; };
+		C0850CAE2A4AC34500A82C64 /* Spark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0850CAD2A4AC34500A82C64 /* Spark.swift */; };
+		C0850CB02A4AD56B00A82C64 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0850CAF2A4AD56B00A82C64 /* Ring.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		C0850C912A4A9E7A00A82C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0850C942A4A9E7A00A82C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0850C962A4A9E7A00A82C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0850CA12A4AA6A000A82C64 /* FaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaveButton.swift; sourceTree = "<group>"; };
+		C0850CA32A4AB52E00A82C64 /* FaveIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaveIcon.swift; sourceTree = "<group>"; };
+		C0850CA52A4AB75300A82C64 /* Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Init.swift; sourceTree = "<group>"; };
+		C0850CA72A4AB8DF00A82C64 /* Constraints+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constraints+.swift"; sourceTree = "<group>"; };
+		C0850CA92A4AB9B000A82C64 /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		C0850CAB2A4AC1B300A82C64 /* Easing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easing.swift; sourceTree = "<group>"; };
+		C0850CAD2A4AC34500A82C64 /* Spark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spark.swift; sourceTree = "<group>"; };
+		C0850CAF2A4AD56B00A82C64 /* Ring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,63 @@
 		C0850C872A4A9E7800A82C64 /* TwitterLikeAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				C0850CA02A4AA66600A82C64 /* FabButton */,
+				C0850C9E2A4A9EF300A82C64 /* Controllers */,
+				C0850C9D2A4A9EDD00A82C64 /* Views */,
+				C0850C9C2A4A9EBD00A82C64 /* Helpers */,
 				C0850C882A4A9E7800A82C64 /* AppDelegate.swift */,
 				C0850C8A2A4A9E7800A82C64 /* SceneDelegate.swift */,
-				C0850C8C2A4A9E7800A82C64 /* ViewController.swift */,
-				C0850C8E2A4A9E7800A82C64 /* Main.storyboard */,
-				C0850C912A4A9E7A00A82C64 /* Assets.xcassets */,
+				C0850C9F2A4A9F0900A82C64 /* Resources */,
 				C0850C932A4A9E7A00A82C64 /* LaunchScreen.storyboard */,
 				C0850C962A4A9E7A00A82C64 /* Info.plist */,
 			);
 			path = TwitterLikeAnimation;
+			sourceTree = "<group>";
+		};
+		C0850C9C2A4A9EBD00A82C64 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C0850CA52A4AB75300A82C64 /* Init.swift */,
+				C0850CA72A4AB8DF00A82C64 /* Constraints+.swift */,
+				C0850CA92A4AB9B000A82C64 /* Geometry.swift */,
+				C0850CAB2A4AC1B300A82C64 /* Easing.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C0850C9D2A4A9EDD00A82C64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C0850C8E2A4A9E7800A82C64 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C0850C9E2A4A9EF300A82C64 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0850C8C2A4A9E7800A82C64 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C0850C9F2A4A9F0900A82C64 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C0850C912A4A9E7A00A82C64 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C0850CA02A4AA66600A82C64 /* FabButton */ = {
+			isa = PBXGroup;
+			children = (
+				C0850CA12A4AA6A000A82C64 /* FaveButton.swift */,
+				C0850CA32A4AB52E00A82C64 /* FaveIcon.swift */,
+				C0850CAD2A4AC34500A82C64 /* Spark.swift */,
+				C0850CAF2A4AD56B00A82C64 /* Ring.swift */,
+			);
+			path = FabButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +203,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0850C8D2A4A9E7800A82C64 /* ViewController.swift in Sources */,
+				C0850CA42A4AB52E00A82C64 /* FaveIcon.swift in Sources */,
+				C0850CA82A4AB8DF00A82C64 /* Constraints+.swift in Sources */,
+				C0850CA22A4AA6A000A82C64 /* FaveButton.swift in Sources */,
+				C0850CA62A4AB75300A82C64 /* Init.swift in Sources */,
+				C0850CAC2A4AC1B300A82C64 /* Easing.swift in Sources */,
+				C0850CAA2A4AB9B000A82C64 /* Geometry.swift in Sources */,
 				C0850C892A4A9E7800A82C64 /* AppDelegate.swift in Sources */,
 				C0850C8B2A4A9E7800A82C64 /* SceneDelegate.swift in Sources */,
+				C0850CB02A4AD56B00A82C64 /* Ring.swift in Sources */,
+				C0850CAE2A4AC34500A82C64 /* Spark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
